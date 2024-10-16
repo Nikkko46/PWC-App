@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weight on other Planets</title>
+    <link rel="stylesheet"
+          href="styles.css" />
+    <script defer
+            src="./script/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Calculate a weight of an object on a planet</h1>
+
+        <input type="text"
+               id="mass"
+               placeholder="Mass in Kilogram" />
+        <select id="planet" onchange="chanePlanet()">
+            <option value="none">--select planet--</option>
+            <option value="mercury">MERCURY</option>
+            <option value="venus">VENUS</option>
+            <option value="earth">EARTH</option>
+            <option value="moon">MOON</option>
+            <option value="mars">MARS</option>
+            <option value="ceres">CERES</option>
+            <option value="jupiter">JUPITER</option>
+            <option value="ganymede">GANYMEDE</option>
+            <option value="io_moon">IO</option>
+            <option value="europa">EUROPA</option>
+            <option value="callisto">CALLIPSO</option>
+            <option value="saturn">SATURN</option>
+            <option value="enceladus">ENCELADUS</option>
+            <option value="titan">TITAN</option>
+            <option value="uranus">URANUS</option>
+            <option value="neptune">NEPTUNE</option>
+            <option value="triton">TRITON</option>
+            <option value="pluto">PLUTO</option>
+            <option value="eris">ERIS</option>
+            <option value="haumea">HAUMEA</option>
+            <option value="makemake">MAKEMAKE</option>
+            <option value="proxima_b">PROXIMA CENTAURI b</option>
+            <option value="corot_7b">COROT 7 b</option>
+            <option value="hd189733b">HD189733 b</option>
+            <option value="kepler_452b">KEPLER 452 b</option>
+        </select>
+        <button>Calculate weight</button>
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="flex-item image">
+                <img src="./images/earth.png" id="displayed_image"
+                     class="planet-image" />
+            </div>
+            <div class="flex-item description"></div>
+        </div>
+    </main>
+</body>
+</html>
