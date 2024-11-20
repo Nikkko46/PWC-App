@@ -6,7 +6,7 @@ class CalculatedWeight {
 	_description = $('.description')
 	_image = $('.image.img')
 	_image_div = $('image')
-	_mass_err = `<h2>Mass is required!</h2>`
+	_mass_err = `<h2>Mass is required!</h2>` //adding brief html code
 	_planet_err = `<h2>You haven't chosen a planet yet!</h2>`
 
 	_weight = { //expressed in Kg
@@ -74,16 +74,16 @@ $('button').addEventListener('click', () => {
 		}
 		else {
 			if (!val)
-				alert('Nu ati introdus o valoare.');
+				alert('No value introduced!');
 			if (!planet || planet == 'none')
-				alert('Nu selectat o planeta.');
+				alert('No planet selected!');
 		}
 	} catch (err) {
 		console.log(err);
 	}
 }); 
 
-function chanePlanet() {
+function changePlanet() {
 	try {
 		var planet = $('#planet').value;
 		$('#displayed_image').src = `./images/${planet}.png`;
